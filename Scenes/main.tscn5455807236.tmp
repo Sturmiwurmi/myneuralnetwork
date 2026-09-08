@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://dg5v1iub1sdxj"]
+
+[ext_resource type="Script" uid="uid://bq7qr600ujcqe" path="res://Scenes/main.gd" id="1_8gbba"]
+[ext_resource type="PackedScene" uid="uid://cnkbvy62xcgwm" path="res://Scenes/neuron.tscn" id="1_jjgbg"]
+[ext_resource type="PackedScene" uid="uid://f2lkulyxe8je" path="res://Scenes/Pixelgrid.tscn" id="2_bo1nx"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_8gbba")
+
+[node name="Neuron3" parent="." instance=ExtResource("1_jjgbg")]
+position = Vector2(444, 247)
+
+[node name="Neuron4" parent="." instance=ExtResource("1_jjgbg")]
+position = Vector2(444, 354)
+
+[node name="Neuron5" parent="." instance=ExtResource("1_jjgbg")]
+position = Vector2(564, 149)
+
+[node name="Neuron6" parent="." instance=ExtResource("1_jjgbg")]
+position = Vector2(564, 245)
+
+[node name="Neuron7" parent="." instance=ExtResource("1_jjgbg")]
+position = Vector2(564, 359)
+
+[node name="Neuron8" parent="." instance=ExtResource("1_jjgbg")]
+position = Vector2(564, 460)
+
+[node name="GridContainer" type="GridContainer" parent="."]
+visible = false
+offset_left = -101.0
+offset_top = 16.0
+offset_right = -61.0
+offset_bottom = 56.0
+columns = 5
+
+[node name="Pixelgrid" parent="." instance=ExtResource("2_bo1nx")]
+position = Vector2(140, 344)
+path = "res://res/train.txt"
+delay = 0.1

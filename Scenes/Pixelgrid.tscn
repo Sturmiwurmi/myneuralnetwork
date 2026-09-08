@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://f2lkulyxe8je"]
+
+[ext_resource type="Texture2D" uid="uid://6f4ejq4nu5n7" path="res://res/icon.svg" id="1_auk0y"]
+[ext_resource type="Script" uid="uid://cjwhm8semh08m" path="res://Scenes/pixelgrid.gd" id="1_hchqt"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_hchqt")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_auk0y")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -49.0
+offset_top = -373.0
+offset_right = 43.0
+offset_bottom = -152.0
+theme_override_font_sizes/font_size = 161
+text = "-"

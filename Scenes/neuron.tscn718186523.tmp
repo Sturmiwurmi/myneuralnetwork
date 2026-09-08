@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://cnkbvy62xcgwm"]
+
+[ext_resource type="Texture2D" uid="uid://bsrt2ftbg3iqg" path="res://res/kreis.png" id="1_81l6c"]
+[ext_resource type="Script" uid="uid://ce5s46cuwcbv3" path="res://Scenes/neuron.gd" id="1_pxji2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pxji2"]
+atlas = ExtResource("1_81l6c")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_81l6c"]
+atlas = ExtResource("1_81l6c")
+
+[node name="Neuron" type="Node2D"]
+script = ExtResource("1_pxji2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+self_modulate = Color(0, 0, 0, 1)
+scale = Vector2(0.08, 0.08)
+texture = SubResource("AtlasTexture_pxji2")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+self_modulate = Color(0, 0.801, 0.89, 1)
+scale = Vector2(0.07, 0.07)
+texture = SubResource("AtlasTexture_81l6c")

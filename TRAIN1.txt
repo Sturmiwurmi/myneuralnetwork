@@ -1,0 +1,5 @@
+Guessed Correctly Without Training 6.0%
+Cost of first Example 2.89156833024527
+Trained on 1000 sequences
+Guessed Correctly With Training 11.0%
+Cost of first Example 0.94543115054441
